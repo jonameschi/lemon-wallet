@@ -1,3 +1,26 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "esnext",
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "paths": {
+      "@components": ["./components"],
+      "@components/*": ["./components/*"],
+      "@hooks": ["./hooks"],
+      "@hooks/*": ["./hooks/*"],
+      "@screens": ["./screens"],
+      "@screens/*": ["./screens/*"],
+      "@helpers": ["./helpers"],
+      "@helpers/*": ["./helpers/*"],
+      "@api": ["./api"],
+      "@api/*": ["./api/*"]
+    }
+  },
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "exclude": ["node_modules"],
+  "typeRoots": ["./types"]
 }

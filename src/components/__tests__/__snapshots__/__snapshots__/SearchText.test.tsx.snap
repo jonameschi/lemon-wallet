@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchText component should render a snapshot - default 1`] = `
+<View
+  style={
+    {
+      "borderBottomRightRadius": 36,
+      "borderColor": "#DFE2E4",
+      "borderLeftWidth": 0,
+      "borderTopRightRadius": 36,
+      "borderWidth": 1,
+      "flexBasis": 0,
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "marginBottom": 16,
+      "marginTop": 16,
+      "paddingBottom": 10,
+      "paddingLeft": 20,
+      "paddingRight": 10,
+      "paddingTop": 10,
+    }
+  }
+>
+  <View
+    alignItems="center"
+    gap={8}
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 8,
+        "justifyContent": "flex-start",
+      }
+    }
+  >
+    <
+      fill="#6C757D"
+      height={24}
+      width={24}
+    />
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      autoFocus={true}
+      onChangeText={[Function]}
+      placeholderTextColor="#6C757D"
+      style={
+        {
+          "color": "#212529",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "fontSize": 16,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        }
+      }
+      testID="undefined-input"
+    />
+  </View>
+</View>
+`;
+
+exports[`SearchText component should render a snapshot - with initial value and placeholder 1`] = `
+<View
+  style={
+    {
+      "borderBottomRightRadius": 36,
+      "borderColor": "#DFE2E4",
+      "borderLeftWidth": 0,
+      "borderTopRightRadius": 36,
+      "borderWidth": 1,
+      "flexBasis": 0,
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "marginBottom": 16,
+      "marginTop": 16,
+      "paddingBottom": 10,
+      "paddingLeft": 20,
+      "paddingRight": 10,
+      "paddingTop": 10,
+    }
+  }
+>
+  <View
+    alignItems="center"
+    gap={8}
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 8,
+        "justifyContent": "flex-start",
+      }
+    }
+  >
+    <
+      fill="#6C757D"
+      height={24}
+      width={24}
+    />
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      autoFocus={true}
+      onChangeText={[Function]}
+      placeholder="Placeholder"
+      placeholderTextColor="#6C757D"
+      style={
+        {
+          "color": "#212529",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "fontSize": 16,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        }
+      }
+      testID="undefined-input"
+      value="Initial Value"
+    />
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="undefined-clear-btn"
+    >
+      <
+        fill="#6C757D"
+        height={24}
+        width={24}
+      />
+    </View>
+  </View>
+</View>
+`;

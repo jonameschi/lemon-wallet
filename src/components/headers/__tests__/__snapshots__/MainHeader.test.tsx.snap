@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainHeader component should render a snapshot - default 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    paddingTop={10}
+    style={
+      {
+        "backgroundColor": "#2647e4",
+        "borderBottomLeftRadius": 30,
+        "borderBottomRightRadius": 30,
+        "height": 90,
+        "paddingBottom": 10,
+        "paddingLeft": 20,
+        "paddingRight": 20,
+        "paddingTop": 10,
+        "shadowColor": "rgba(23, 108, 232, 0.175)",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 4,
+      }
+    }
+  >
+    <View
+      alignItems="center"
+      gap={10}
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 10,
+          "justifyContent": "flex-start",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontSize": 14,
+            "fontWeight": "600",
+          }
+        }
+      >
+        welcome - {}
+      </Text>
+    </View>
+    <View
+      justifyContent="flex-end"
+      style={
+        {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+          "gap": 0,
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        testID="logout-btn"
+      >
+        <View
+          pressed={false}
+          style={
+            {
+              "backgroundColor": "#fff",
+              "borderBottomLeftRadius": 36,
+              "borderBottomRightRadius": 36,
+              "borderTopLeftRadius": 36,
+              "borderTopRightRadius": 36,
+              "opacity": 1,
+              "paddingBottom": 8,
+              "paddingLeft": 12,
+              "paddingRight": 12,
+              "paddingTop": 8,
+              "width": 150,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#212529",
+                "fontSize": 16,
+                "fontWeight": "600",
+                "textAlign": "center",
+              }
+            }
+          >
+            logout
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RNCSafeAreaProvider>
+`;

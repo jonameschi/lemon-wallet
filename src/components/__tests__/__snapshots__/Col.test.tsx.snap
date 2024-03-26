@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Col component should render a snapshot - center with gap 1`] = `
+<View
+  gap={4}
+  justifyContent="center"
+  style={
+    {
+      "flexBasis": 0,
+      "flexDirection": "column",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "gap": 4,
+      "justifyContent": "center",
+    }
+  }
+/>
+`;
+
+exports[`Col component should render a snapshot - with baseline justify and gap 0  1`] = `
+<View
+  gap={0}
+  justifyContent="baseline"
+  style={
+    {
+      "flexBasis": 0,
+      "flexDirection": "column",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "gap": 0,
+      "justifyContent": "baseline",
+    }
+  }
+/>
+`;
+
+exports[`Col component should render a snapshot - without props 1`] = `
+<View
+  style={
+    {
+      "flexBasis": 0,
+      "flexDirection": "column",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "gap": 0,
+      "justifyContent": "flex-start",
+    }
+  }
+/>
+`;

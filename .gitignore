@@ -64,3 +64,11 @@ yarn-error.log
 
 # testing
 /coverage
+
+#eslint cache
+.eslintcache
+.eslintcachestaged
+
+#unit test
+coverage/*
+.jest-cache

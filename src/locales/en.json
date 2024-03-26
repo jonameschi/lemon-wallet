@@ -1,0 +1,23 @@
+{
+  "screens": {
+    "home": {
+      "welcome": "Welcome {{name}}",
+      "search": "symbol or name of crypto currency",
+      "favorites": "Only favorites"
+    },
+    "login": {
+      "title": "Secured and easy to use.",
+      "cantUsers": "You're the first user that use the app. Congrats!",
+      "login": "Login with Google"
+    }
+  },
+  "components": {
+    "mainHeader": {
+      "welcome": "Welcome {{name}}",
+      "logout": "Logout"
+    }
+  },
+  "common": {
+    "appName": "Lemon Challenge"
+  }
+}

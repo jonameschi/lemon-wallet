@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row component should render a snapshot - center with gap 1`] = `
+<View
+  alignItems="center"
+  gap={4}
+  justifyContent="center"
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "gap": 4,
+      "justifyContent": "center",
+    }
+  }
+/>
+`;
+
+exports[`Row component should render a snapshot - with baseline align items and gap 0  1`] = `
+<View
+  alignItems="baseline"
+  gap={0}
+  style={
+    {
+      "alignItems": "baseline",
+      "flexDirection": "row",
+      "gap": 0,
+      "justifyContent": "flex-start",
+    }
+  }
+/>
+`;
+
+exports[`Row component should render a snapshot - without props 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-start",
+      "flexDirection": "row",
+      "gap": 0,
+      "justifyContent": "flex-start",
+    }
+  }
+/>
+`;

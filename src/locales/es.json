@@ -1,0 +1,23 @@
+{
+  "screens": {
+    "home": {
+      "welcome": "Hola {{name}}",
+      "search": "simbolo o nombre de una criptomoneda",
+      "favorites": "Solo favoritos"
+    },
+    "login": {
+      "title": "Seguro y facil de usar.",
+      "cantUsers": "Sos el primer usuario en usar la app. Felicitaciones!",
+      "login": "Iniciar sesion con Google"
+    }
+  },
+  "components": {
+    "mainHeader": {
+      "welcome": "Hola {{name}}",
+      "logout": "Cerrar sesion"
+    }
+  },
+  "common": {
+    "appName": "Lemon Challenge"
+  }
+}

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Theme data should render a snapshot of Theme data 1`] = `
+{
+  "background": {
+    "inversed": "#D3D3D3",
+    "primary": "#F8F9FA",
+    "secondary": "#2647e4",
+    "tertiary": "#fff",
+  },
+  "line": {
+    "primary": "#DFE2E4",
+  },
+  "skeletons": {
+    "background": "#D3D3D3",
+  },
+  "text": {
+    "inversed": "#FFFFFF",
+    "negative": "#D90429",
+    "positive": "#21BF73",
+    "primary": "#212529",
+    "secondary": "#343A40",
+    "tertiary": "#6C757D",
+    "warning": "#f8b84e",
+  },
+}
+`;

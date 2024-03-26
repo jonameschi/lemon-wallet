@@ -1,4 +1,4 @@
-package com.lemon
+package com.lemon.wallet
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

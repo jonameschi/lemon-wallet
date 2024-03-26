@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spacer component should render a snapshot - with horizontal orientation and size 0 1`] = `
+<View
+  orientation="horizontal"
+  size={0}
+  style={
+    {
+      "width": 0,
+    }
+  }
+/>
+`;
+
+exports[`Spacer component should render a snapshot - without vertical orientation and size 12 1`] = `
+<View
+  orientation="vertical"
+  size={12}
+  style={
+    {
+      "height": 12,
+    }
+  }
+/>
+`;
