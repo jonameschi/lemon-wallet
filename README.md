@@ -1,79 +1,147 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+![Badge License](https://img.shields.io/badge/license-not%20specified-lightgrey)
+![Badge Release](https://img.shields.io/badge/release%20date-mar%202024-green)
 
-# Getting Started
+# Lemon Challenge
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Proyecto desarrollado para el desafío técnico de Lemon.
 
-## Step 1: Start the Metro Server
+## Indice
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- [Requisitos previos](#requisitos-previos)
+- [Instalación](#instalación)
+- [Variables de entorno](#variables-de-entorno)
+- [Ejecución](#ejecución)
+- [Comandos aternativos](#comandos-alternativos)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Aclaraciones](#aclaraciones)
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Requisitos previos
+
+Debe tener instalado lo siguiente:
+
+- Node.js: Puedes descargar la versión LTS más reciente desde el sitio web oficial de Node.js: https://nodejs.org
+- React Native CLI: Ejecutando el siguiente comando: `npm install -g react-native-cli`
+- Yarn: Puedes descargar la última versión de Yarn desde su sitio web oficial: https://yarnpkg.com/lang/en/docs/install/
+
+## Instalación
 
 ```bash
-# using npm
-npm start
+# Clonar el repositorio
+git clone https://github.com/jonameschi/lemon-wallet
+cd lemon-wallet
 
-# OR using Yarn
+# Instalar las dependencias
+yarn install
+yarn pod:install
+```
+
+## Variables de entorno
+
+Deje seteadas mis api key para que puedan usar el Google SignIn y la API de CoinMarket.
+
+## Ejecución
+
+```bash
+# Iniciar la aplicación
 yarn start
 ```
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+Y luego
 
 ```bash
-# using npm
-npm run android
+# Iniciar la aplicación en iOS
+yarn ios
 
-# OR using Yarn
+# Iniciar la aplicación en Android
 yarn android
 ```
 
-### For iOS
+## Comandos aternativos
 
 ```bash
-# using npm
-npm run ios
+# validaciones de lint
+yarn lint
 
-# OR using Yarn
-yarn ios
+# validaciones de typescript
+yarn typescript
+
+# ejecución de tests
+yarn test
+
+# ejecución de tests con coverage
+yarn test:coverage
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Estructura del proyecto
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+```bash
+├── src/ # Código fuente
+│ ├── api/ #Logica de llamada a API y tipos
+│ ├── components/ # Componentes de la app
+│ ├── helpers/ # Funciones de ayuda
+│ ├── hooks/ # Custom hooks
+│ ├── locales/ # configuracion de internacionalizacion (i18n)
+│ ├── navigation/ # Tipado de navegaciones
+│ ├── screens/ # Pantallas de la aplicación
+│ └── theme/ # Configuracion de themes
+├── __mocks__/ # mocks para unit test
+├── assets/ # Recursos estáticos (imágenes)
+├── types/ # Types globales y declarations.
+├── App.tsx # Archivo inicial de la aplicación donde se encuentra el stack de navegación
+└── ...
+```
 
-## Step 3: Modifying your App
+## Aclaraciones
 
-Now that you have successfully run the app, let's modify it.
+Incluí las siguientes screens:
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+- Login: Pantalla de inicio de sesión con Google SignIn.
+- Home: Pantalla principal con el listado de criptomonedas, con la posibilidad de filtrar, agregar a favoritos y ver el detalle de cada una.
+- Detail: Pantalla de detalle de la criptomoneda seleccionada, con un grafico de la evolucion de los ultimos 30 dias (informacion random, ya que la API no me permitió obtener esa informacion con la key que tengo). Y haciendo pull to refresh se actualiza la informacion.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+Hay varios unit test, priorice realizar al menos un test sobre componentes, hooks y screens. El de la screen Home esta probado en su totalidad,no logré por falta de tiempo hacer los test con maestro.
 
-## Congratulations! :tada:
+## Librerías y Herramientas Utilizadas
 
-You've successfully run and modified your React Native App. :partying_face:
+### Navegación
 
-### Now what?
+- **React Navigation (`@react-navigation/native`, `@react-navigation/native-stack`, `react-native-screens`)**
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+### Internacionalización
 
-# Troubleshooting
+- **i18next (`i18next`), React-i18next (`react-i18next`)**
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+### Gestión de Estado y Caché
 
-# Learn More
+- **Zustand (`zustand`)**
+- **React Query (`react-query`)**
+- **Storage (`react-native-mmkv`)**
 
-To learn more about React Native, take a look at the following resources:
+### Autenticación
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- **Google Sign-In (`@react-native-google-signin/google-signin`)**
+
+### Optimización de Imágenes
+
+- **FastImage (`react-native-fast-image`)**
+
+### UI y Animaciones
+
+- **Varias librerías (`react-native-gesture-handler`, `react-native-reanimated`, `react-native-safe-area-context`)**
+
+### Gráficos y SVG
+
+- **React Native SVG (`react-native-svg`, `react-native-svg-transformer`)**
+- **Victory Native (`victory-native`, `react-native-skia`)**
+
+### Configuración y Variables de Entorno
+
+- **React Native Config (`react-native-config`)**
+
+### Testing
+
+- **Jest (`jest`), Testing Library (`@testing-library/react-native`, `@testing-library/react-hooks`)**
+
+### Linting y Formateo de Código
+
+- **ESLint (`eslint`), Prettier (`prettier`)**
